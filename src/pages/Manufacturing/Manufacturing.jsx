@@ -9,8 +9,8 @@ import carparkingawning from "../../assets/new-image/CarParkingAwning.png";
 import dropawning from "../../assets/new-image/DropAwning.png";
 import foldingawning from "../../assets/new-image/FoldingAwning.png";
 import foldingawningjindal from "../../assets/new-image/FoldingAwningJindal.png";
-import foldingawningjindal1 from "../../assets/new-image/foldingawningjindal1.png";
-import foldingawningjindal2 from "../../assets/new-image/foldingawningjindal2.png";
+import foldingawningjindal1 from "../../assets/new-image/FoldingAwningJindal1.png";
+import foldingawningjindal2 from "../../assets/new-image/FoldingAwningJindal2.png";
 import hutawning from "../../assets/new-image/HutAwning.png";
 import hutawning1  from "../../assets/new-image/HutAwning1.png";
 import hutawning2 from "../../assets/new-image/HutAwning2.png";
@@ -44,7 +44,7 @@ const systems = [
   { name: "Car Parking Awning", image: carparkingawning },
   { name: "Drop Awning", image: dropawning },
   { name: "Folding Awning", image: foldingawning },
-  { name: "Folding Awning Jindal1", image: foldingawningjindal },
+  { name: "Folding Awning Jindal 1", image: foldingawningjindal },
   { name: "Folding Awning Jindal 2", image: foldingawningjindal1 },
   { name: "Folding Awning Jindal 3", image: foldingawningjindal2 },
   { name: "Hut Awning", image: hutawning },

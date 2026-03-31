@@ -160,6 +160,26 @@
   color: #e2e8f0;
 }
 
+.tech-head h2 {
+  font-size: 3rem; 
+  font-weight:700;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tech h5 {
+  font-size:2rem;
+  font-weight:500;
+}
+
+.tech ul li{
+  color: rgb(39, 91, 129);
+}
 
 .home-page .why-layout .col-lg-5 > h4 {
   color: rgb(39, 91, 129);
@@ -188,12 +208,16 @@
   color: var(--color-secondary);
   font-weight: 700;
   margin-bottom: 1rem;
+  font-size: 2.2rem;
 }
 
 .fabric-card ul {
   margin: 0;
   padding-left: 1.2rem;
   color: var(--color-muted);
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .fabric-card ul li {

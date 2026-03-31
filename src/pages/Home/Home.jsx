@@ -10,7 +10,7 @@ import DropAwning from "../../assets/new-image/DropAwning.png";
 import HutAwning from "../../assets/new-image/HutAwning.png";
 import TensileStructure from "../../assets/new-image/TensileStructure.png";
 import HutAwning1 from "../../assets/new-image/HutAwning1.png";
-import verticalAwning from "../../assets/images/vertical-awning.svg";
+import VerticalAwning from "../../assets/new-image/VerticalAwning.png";
 import CarParkingAwning from "../../assets/new-image/CarParkingAwning.png";
 import home from "../../assets/new-image/home.png";
 import pakode from "../../assets/new-image/pakode.png";
@@ -36,7 +36,7 @@ const featured = [
   { title: "Folding Awning", image: FoldingAwning, description: "Smart and durable retractable systems." },
   { title: "Tensile Parking", image: TensileStructure1, description: "Large format shade protection for vehicle zones." },
   { title: "Hut Awning", image: HutAwning, description: "Decorative weather shield with strong framing." },
-  { title: "Vertical Awning", image: verticalAwning, description: "Space-saving modern systems for side coverage." },
+  { title: "Vertical Awning", image: VerticalAwning, description: "Space-saving modern systems for side coverage." },
 ];
 
 const whyChooseItems = [
@@ -55,6 +55,15 @@ const whyChooseItems = [
   {
     title: "Affordable Pricing",
     description: "Practical solutions with transparent pricing and value-focused recommendations.",
+  },
+];  
+
+const Technician = [
+  {
+    Name : "Niraj Maladhari",
+  },
+  {
+    Name : "Omprakash Maneshwar",
   },
 ];
 
@@ -94,10 +103,21 @@ const Home = () => {
                 ))}
               </div>
             </div>
-
             <div className="col-lg-5" data-aos="fade-left">
                 <img src={sir} alt="Company Director" className="why-sir" />              
                 <h4>Owner : <p>Sir. Abhishek Shrivastav</p></h4>
+            </div>
+            <div className="tech-head">
+              <h2>Technician Name -</h2>
+              {Technician.map((item) => (
+                <div className="tech" data-aos="fade-up" key={item.Name}>
+                <ul>
+                  <li>
+                    <h5>{item.Name}</h5>
+                  </li>
+                </ul>
+                </div>
+              ))}              
             </div>
           </div>
         </div>

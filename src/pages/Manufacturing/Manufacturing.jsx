@@ -24,7 +24,7 @@ import verticalawning1 from "../../assets/new-image/VerticalAwning1.png";
 import windowawning1 from "../../assets/new-image/WindowAwning1.png";
 import windowawning2 from "../../assets/new-image/WindowAwning2.png";
 import windowawning3 from "../../assets/new-image/WindowAwning3.png";
-import sideplate from "../../assets/new-image/SidePlate.png";
+import sideplate from "../../assets/new-image/sideplate.png";
 import gearbox from "../../assets/new-image/gearbox.png";
 import frontbarjoint from "../../assets/new-image/frontbarjoint.png";
 import frontbar from "../../assets/new-image/frontbar.png";

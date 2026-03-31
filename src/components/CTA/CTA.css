@@ -1,0 +1,29 @@
+.cta-banner { padding-top: 1rem; }
+.cta-inner { background: linear-gradient(130deg, #1e3a8a, #263f8d 55%, #f97316 160%); border-radius: 1.25rem; color: #fff; padding: 2.3rem; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; box-shadow: var(--shadow-hover); }
+.cta-inner h3 { margin: 0; font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 800; }
+.cta-inner p { margin: 0.6rem 0 0; color: #e2e8f0; }
+
+@media (max-width: 991px) {
+  .cta-inner {
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.45rem;
+    border-radius: 1rem;
+  }
+
+  .cta-inner .d-flex {
+    width: 100%;
+  }
+
+  .cta-inner .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}

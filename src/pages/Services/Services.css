@@ -1,0 +1,206 @@
+.services-banner {
+  position: relative;
+  background: linear-gradient(
+    120deg,
+    rgba(15, 23, 42, 0.83),
+    rgba(30, 58, 138, 0.72)
+  ),
+  url("../../assets/new-image/servicebg.jpg");
+  color: #fff;
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  min-height: 38rem;
+  display: flex;
+  align-items: center;
+}
+
+.services-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.services-kicker {
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #bfdbfe;
+  margin-bottom: 0.65rem;
+  font-weight: 700;
+}
+
+.services-banner h1 {
+  font-size: clamp(2rem, 6.6vw, 4.4rem);
+  font-weight: 800;
+  max-width: 760px;
+  line-height: 1.14;
+}
+
+.services-banner p {
+  color: #e2e8f0;
+  max-width: 680px;
+  margin-bottom: 0;
+  font-size: clamp(0.98rem, 2vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.services-banner .services-lead {
+  margin-top: 0.85rem;
+  margin-bottom: 1.15rem;
+  line-height: 1.7;
+}
+
+.services-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1.2rem;
+}
+
+.services-hero-points span {
+  border: 1px solid rgba(191, 219, 254, 0.45);
+  background: rgba(15, 23, 42, 0.35);
+  color: #dbeafe;
+  border-radius: 999px;
+  padding: 0.42rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.services-hero-points span:hover {
+  transform: translateY(-4px) scale(1.03);
+  background: rgba(59, 130, 246, 0.28);
+  border-color: rgba(191, 219, 254, 0.8);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.35);
+}
+
+.services-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  max-width: 980px;
+}
+
+.services-hero-stat {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.85rem;
+  padding: 0.95rem;
+  backdrop-filter: blur(2px);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, background-color 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-hero-stat::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(147, 197, 253, 0.15), rgba(59, 130, 246, 0.02));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.services-hero-stat:hover {
+  transform: translateY(-6px);
+  border-color: rgba(191, 219, 254, 0.75);
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.36);
+}
+
+.services-hero-stat:hover::before {
+  opacity: 1;
+}
+
+.services-hero-stat h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+}
+
+.services-hero-stat p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 1.6rem;
+  color: var(--color-secondary);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+.benefit-card h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.benefit-card p {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+@media (max-width: 1200px) {
+  .services-banner {
+    min-height: 35rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .services-banner {
+    min-height: 34rem;
+    background-position: center 26%;
+  }
+
+  .services-hero-points span {
+    font-size: 0.8rem;
+    padding: 0.38rem 0.74rem;
+  }
+
+  .services-hero-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-banner {
+    min-height: 33rem;
+    background-position: center;
+  }
+
+  .services-hero-content.py-5 {
+    padding-top: 2.6rem !important;
+    padding-bottom: 2.6rem !important;
+  }
+
+  .services-hero-points {
+    gap: 0.5rem;
+  }
+
+  .services-hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-card {
+    padding: 1.2rem;
+  }
+
+  .benefit-card h5 {
+    font-size: 1rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.9rem;
+  }
+}

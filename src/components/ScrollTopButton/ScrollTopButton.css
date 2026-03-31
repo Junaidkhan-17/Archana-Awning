@@ -1,0 +1,12 @@
+.scroll-top-btn { position: fixed; right: 1rem; bottom: 8rem; width: 44px; height: 44px; border: 0; border-radius: 50%; background: var(--color-secondary); color: #fff; box-shadow: var(--shadow-soft); opacity: 0; visibility: hidden; transform: translateY(8px); transition: 0.25s ease; z-index: 1055; }
+.scroll-top-btn.show { opacity: 1; visibility: visible; transform: translateY(0); }
+.scroll-top-btn:hover { background: var(--color-secondary-dark); }
+
+@media (max-width: 767px) {
+  .scroll-top-btn {
+    right: 0.72rem;
+    bottom: 6.25rem;
+    width: 41px;
+    height: 41px;
+  }
+}

@@ -64,6 +64,7 @@
   font-size: clamp(0.98rem, 1.5vw, 1.16rem);
   color: #e2e8f0;
   line-height: 1.65;
+  max-width: 62ch;
 }
 
 
@@ -86,7 +87,7 @@
 
 @media (max-width: 767px) {
   .hero-section {
-    min-height: 68vh;
+    min-height: 72vh;
   }
 
   .hero-section::before {
@@ -109,5 +110,36 @@
 
   .hero-content .d-flex {
     gap: 0.6rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-section {
+    min-height: 74vh;
+    align-items: flex-end;
+  }
+
+  .hero-content {
+    padding-bottom: 1.1rem;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.85rem, 8vw, 2.35rem);
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 0.93rem;
+    line-height: 1.6;
+  }
+
+  .hero-content .d-flex {
+    width: 100%;
+  }
+
+  .hero-content .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
   }
 }

@@ -59,6 +59,10 @@
     text-align: center;
   }
 
+  .site-footer p {
+    font-size: 0.95rem;
+  }
+
   .footer-bottom .container {
     justify-content: center !important;
     text-align: center;
@@ -72,5 +76,25 @@
   .footer-bottom img {
     width: 104px;
     height: 26px;
+  }
+}
+
+@media (max-width: 575px) {
+  .site-footer .container.py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 1.8rem !important;
+  }
+
+  .site-footer .col-lg-5 h5 {
+    font-size: 1.16rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.84rem;
+  }
+
+  .footer-bottom h4 {
+    letter-spacing: 0.12em;
+    font-size: 0.58rem;
   }
 }

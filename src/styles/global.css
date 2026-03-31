@@ -16,10 +16,11 @@
 * { box-sizing: border-box; }
 
 html, body, #root { width: 100%; min-height: 100%; }
+html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-text);
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
   line-height: 1.55;
@@ -31,7 +32,7 @@ img { max-width: 100%; display: block; }
 
 .section-space { padding: 5rem 0; }
 .bg-light-panel { background: #f1f5f9; }
-.container { padding-left: 1rem; padding-right: 1rem; }
+.container { padding-left: clamp(0.9rem, 2.6vw, 1.35rem); padding-right: clamp(0.9rem, 2.6vw, 1.35rem); }
 
 .image-hover-wrap { overflow: hidden; border-radius: var(--radius-lg); }
 .image-hover-wrap img { transition: transform 0.35s ease, filter 0.35s ease; }
@@ -95,7 +96,12 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 575px) {
-  .container { padding-left: 0.85rem; padding-right: 0.85rem; }
+  .section-space { padding: 2.8rem 0; }
+
+  .btn-brand,
+  .btn-outline-brand {
+    min-height: 42px;
+  }
 }
 
 /* Mobile/touch transition tuning for all pages/components */

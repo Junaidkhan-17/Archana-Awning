@@ -7,6 +7,7 @@
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 .site-navbar.scrolled { box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1); background: rgba(255, 255, 255, 0.98); }
+.site-navbar .navbar { min-height: 74px; }
 
 .brand-mark { display: flex; flex-direction: column; font-weight: 800; color: var(--color-secondary); line-height: 1.05; }
 .brand-mark span { font-size: clamp(0.95rem, 1.35vw, 1.15rem); }
@@ -22,8 +23,14 @@
 
 @media (max-width: 991px) {
   .site-navbar .navbar {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    min-height: 68px;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .brand-mark span {
+    max-width: 230px;
+    line-height: 1.18;
   }
 
   .brand-mark small {
@@ -48,5 +55,29 @@
   .navbar-nav .btn {
     width: 100%;
     justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .site-navbar .navbar {
+    min-height: 62px;
+  }
+
+  .brand-mark span {
+    font-size: 0.86rem;
+    max-width: 178px;
+  }
+
+  .brand-mark small {
+    font-size: 0.59rem;
+  }
+
+  .navbar-collapse {
+    margin-top: 0.7rem;
+    padding: 0.7rem 0.78rem;
+  }
+
+  .nav-link {
+    font-size: 0.96rem;
   }
 }

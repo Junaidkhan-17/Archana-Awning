@@ -166,3 +166,36 @@
     height: 300px;
   }
 }
+
+@media (max-width: 575px) {
+  .contact-box,
+  .contact-form {
+    padding: 1.2rem 1rem;
+  }
+
+  .contact-intro {
+    margin-bottom: 1.05rem;
+  }
+
+  .contact-point {
+    padding: 0.56rem 0.58rem;
+  }
+
+  .contact-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .contact-form .form-control,
+  .contact-form .form-select {
+    padding: 0.68rem 0.78rem;
+  }
+
+  .map-card {
+    padding: 0.65rem;
+  }
+
+  .map-card iframe {
+    height: 260px;
+  }
+}

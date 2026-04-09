@@ -1,6 +1,7 @@
 import "./Manufacturing.css";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import VideoCard from "../../components/VideoCard/VideoCard";
 
 
 
@@ -37,6 +38,9 @@ import sideplatecap from "../../assets/new-image/sideplatecap.png";
 import wallclamp from "../../assets/new-image/wallclamp.png";
 import fabricpvc from "../../assets/new-image/fabricpvc.png";
 import fabricacrylic from "../../assets/new-image/fabricacrylic.png";
+import video1 from "../../assets/video/video1.mp4";
+import video2 from "../../assets/video/video2.mp4";
+import video3 from "../../assets/video/video3.mp4";
 
 
 // ✅ UPDATED SYSTEMS ARRAY (now with images)
@@ -61,6 +65,12 @@ const systems = [
   { name: "Window Awning 1", image: windowawning1 },
   { name: "Window Awning 2", image: windowawning2 },
   { name: "Window Awning 3", image: windowawning3 },
+];
+
+const videos = [
+  { id: "video-1", name: "Awning Installation", video: video1 },
+  { id: "video-2", name: "Awning Installation", video: video2 },
+  { id: "video-3", name: "Awning Installation", video: video3 },
 ];
 
 const components = [
@@ -165,6 +175,19 @@ const Manufacturing = () => {
             </div>
           </div>
         </section>
+
+        <section className="mb-5">
+          <SectionTitle title="Awning Installation Process" />
+          <div className="row g-4">
+            {videos.map((item) => (
+              <div className="col-md-6 col-lg-4" key={item.id}>
+                <VideoCard {...item} />
+              </div>
+            ))}
+          </div>
+        </section>
+
+
 
         <section>
           <SectionTitle title="Automation & Controls" />

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import Collapse from "bootstrap/js/dist/collapse";
+import archanalogo1 from "../../assets/new-image/archanalogo1.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -49,8 +50,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg py-3">
         <div className="container">
           <NavLink className="navbar-brand brand-mark" to="/">
-            <span>ARCHANA AWNING COMPANY</span>
-            <small>The World of Awning & Tensile</small>
+            <img src={archanalogo1} className="nav-logo" alt="Archana logo"/>
           </NavLink>
           <button
             className={`navbar-toggler ${menuOpen ? "" : "collapsed"}`}

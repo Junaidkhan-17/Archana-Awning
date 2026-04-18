@@ -67,6 +67,7 @@ const Technician = [
   },
 ];
 
+
 const Home = () => {
 
   return (
@@ -117,7 +118,8 @@ const Home = () => {
                   </li>
                 </ul>
                 </div>
-              ))}              
+              ))} 
+              <h6 className="feature-employee"> No. of Employee : 20+ People</h6>             
             </div>
           </div>
         </div>

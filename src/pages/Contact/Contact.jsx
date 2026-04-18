@@ -2,6 +2,9 @@ import "./Contact.css";
 import { FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp, FaClock } from "react-icons/fa";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
+const locationLink =
+  "https://www.google.com/maps/place/Teachers+Colony,+Wagdara,+Maharashtra+441110/@21.0937667,78.9863985,17z/data=!3m1!4b1!4m6!3m5!1s0x3bd4953e77117cbf:0x77f53f12cf4a5b09!8m2!3d21.0936688!4d78.9909222!16s%2Fg%2F11btx7ml08!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D";
+
 const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -49,12 +52,12 @@ const Contact = () => {
                 </p>
 
                 <div className="contact-points">
-                  <div className="contact-point">
+                  <a className="contact-point" href={locationLink} target="_blank" rel="noreferrer">
                     <span className="contact-icon">
                       <FaMapMarkerAlt />
                     </span>
-                    <p>Plot No. 57, Rajiv Nagar, Hingna Road, MIDC Area, Nagpur</p>
-                  </div>
+                    <p>Teachers Colony, Wagdara, Maharashtra 441110</p>
+                  </a>
                   <a className="contact-point" href="tel:+917709382191">
                     <span className="contact-icon">
                       <FaPhoneAlt />
@@ -171,17 +174,28 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        <div className="branch">
+            <div className="branch-item" data-aos="fade-up" >
+              <h3>Branch Office 1</h3>
+              <p>Kailash Nagar, Birgaon, Raipur (C.G)</p>
+            </div>
+            <div className="branch-item " data-aos="fade-up" data-aos-delay="100">
+              <h3>Branch Office 2</h3>
+              <p>Brahmasthan Mau (UP) </p>
+              <p>Ramjanam Srivastav: 7518320374</p>
+            </div>
+        </div>
 
         <div className="map-card card-surface" data-aos="zoom-in-up">
           <iframe
             title="Company Location"
-            src="https://www.google.com/maps?q=Plot%20No.%2057%20Rajiv%20Nagar%20Hingna%20Road%20MIDC%20Area%20Nagpur&output=embed"
+            src="https://www.google.com/maps?q=21.0936688,78.9909222&z=17&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
       </div>
-    </div>
+    </div>   
   );
 };
 
